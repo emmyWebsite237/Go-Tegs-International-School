@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Academics | Go-Tegs International School</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<style>
+    /* Global Styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;.
+}
+
+body {
+	font-family: , sans-serif;
+	line-height: 2.0;<!--  -->
+	background-color: #f0f0f0;
+}
+
+header {
+	background-color: #007bff;
+	color: #ffffff;
+	padding: 1em;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+header p {
+	font-size: 1.2em;
+	color: #ffffff;
+}
+
+main {
+	display: block;
+	padding: 2em;
+}
+
+section {
+	background-color: #ffffff;
+	padding: 2em;
+	margin-bottom: 2em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+	color: #333;
+	margin-top: 0;
+}
+
+.programs-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.program-card {
+	background-color: #f7f7f7;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+}
+
+.program-card h3 {
+	margin-top: 0;
+}
+
+.courses-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.course-card {
+	background-color: #f7f7f7;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+}
+
+.course-card h3 {
+	margin-top: 0;
+}
+
+footer {
+	background-color: #333;
+	color: #ffffff;
+	padding: 1em;
+	text-align: center;
+	clear: both;
+}
+
+footer p {
+	font-size: 1.2em;
+	color: #ffffff;
+}
+</style>
+<script>
+    // Add event listeners to program cards
+document.querySelectorAll('.program-card').forEach(card => {
+	card.addEventListener('click', event => {
+		alert(`You clicked on ${card.querySelector('h3').textContent}!`);
+	});
+});
+
+// Add event listeners to course cards
+document.querySelectorAll('.course-card').forEach(card => {
+	card.addEventListener('click', event => {
+		alert(`You clicked on ${card.querySelector('h3').textContent}!`);
+	});
+});
+</script>
+</head>
+<body>
+	<header>
+		<h1>Academics</h1>
+		<p>Empowering minds for a brighter future</p>
+	</header>
+	<main>
+		<!-- Academic Programs section -->
+		
+		<section id="programs">
+			<h2>Academic Programs</h2>
+			<p>We offer a range of academic programs to suit your needs</p>
+			<div class="programs-grid">
+				<div class="program-card">
+   				<h3>High School</h3>
+					<p>Grades 9-12</p>
+				</div>
+				<div class="program-card">    
+					<h3>Middle School</h3>
+					<p>Grades 6-8</p>
+				</div>
+				<div class="program-card">
+					<h3>Elementary School</h3>
+					<p>Grades K-5</p>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Course Offerings section -->
+		
+		<section id="courses">
+			<h2>Course Offerings</h2>
+			<p>We offer a wide range of courses to suit your interests</p>
+			<div class="courses-grid">
+				<div class="course-card">
+					<h3>Mathematics</h3>
+					<p>Algebra, Geometry, Calculus</p>
+				</div>
+				<div class="course-card">
+					<h3>Science</h3>
+					<p>Biology, Chemistry, Physics</p>
+				</div>
+				<div class="course-card">
+					<h3>English</h3>
+					<p>Language Arts, Literature</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2024 Go-Tegs International School</p>
+	</footer>
+</body>
+</html>

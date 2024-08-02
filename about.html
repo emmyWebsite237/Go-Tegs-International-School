@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About Us | Go-Tegs International School</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    /* Global Styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	background-color: #f0f0f0;
+}
+
+header {
+	background-color: #007bff;
+	color: #ffffff;
+	padding: 1em;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+header p {
+	font-size: 1.2em;
+	color: #ffffff;
+}
+
+main {
+	display: block;
+	padding: 2em;
+}
+
+section {
+	background-color: #ffffff;
+	padding: 2em;
+	margin-bottom: 2em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+	color: #333;
+	margin-top: 0;
+}
+
+#our-story p,
+#our-mission p,
+#our-values p {
+	margin-bottom: 20px;
+}
+
+#our-values ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#our-values li {
+	margin-bottom: 10px;
+}
+
+footer {
+	background-color: #333;
+	color: #ffffff;
+	padding: 1em;
+	text-align: center;
+	clear: both;
+}
+
+footer p {
+	font-size: 1.2em;
+	color: #ffffff;
+}
+</style>
+<script>
+    // Add event listener to our story section
+
+// Add event listener to our mission section
+document.querySelector('#our-mission').addEventListener('click', event => {
+	alert('You clicked on our mission!');
+});
+
+// Add event listener to our values section
+document.querySelector('#our-values').addEventListener('click', event => {
+	alert('You clicked on our values!');
+});
+</script>
+</head>
+<body>
+	<header>
+		<h1>About Us</h1>
+		<p>Learn more about our school's mission and values</p>
+	</header>
+	<main>
+		<!-- Our Story section -->
+		
+		<section id="our-story">
+			<h2>Our Story</h2>
+			<p>Discover how our school was founded and what drives us</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+		</section>
+		
+		<!-- Our Mission section -->
+		
+		<section id="our-mission">
+			<h2>Our Mission</h2>
+			<p>Empowering students to succeed in a rapidly changing world</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+		</section>
+		
+		<!-- Our Values section -->
+		
+		<section id="our-values">
+			<h2>Our Values</h2>
+			<p>What we stand for and believe in</p>
+			<ul>
+				<li>Respect for all individuals</li>
+				<li>Integrity in all our actions</li>
+				<li>Excellence in everything we do</li>
+			</ul>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2024 Go-Tegs International School</p>
+	</footer>
+</body>
+</html>

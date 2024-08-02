@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News & Events | Go-Tegs International School</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+<style>
+    /* Global Styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	line-height: 1.6;
+	background-color: #f0f0f0;
+}
+
+header {
+	background-color: #007bff;
+	color: #ffffff;
+	padding: 1em;
+	text-align: center;
+}
+
+header h1 {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+header p {
+	font-size: 1.2em;
+	color: #ffffff;
+}
+
+main {
+	display: block;
+	padding: 2em;
+}
+
+section {
+	background-color: #ffffff;
+	padding: 2em;
+	margin-bottom: 2em;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+	color: #333;
+	margin-top: 0;
+}
+
+.news-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.news-card {
+	background-color: #f7f7f7;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+}
+
+.news-card h3 {
+	margin-top: 0;
+}
+
+.events-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+}
+
+.event-card {
+	background-color: #f7f7f7;
+	padding: 20px;
+	border: 1px solid #ddd;
+	border-radius: 10px;
+}
+
+.event-card h3 {
+	margin-top: 0;
+}
+
+footer {
+	background-color: #333;
+	color: #ffffff;
+	padding: 1em;
+	text-align: center;
+	clear: both;
+}
+
+footer p {
+	font-size: 1.2em;
+	color: #ffffff;
+}
+</style>
+<script>
+    // Add event listeners to news cards
+document.querySelectorAll('.news-card').forEach(card => {
+	card.addEventListener('click', event => {
+		alert(`You clicked on ${card.querySelector('h3').textContent}!`);
+	});
+});
+
+// Add event listeners to event cards
+document.querySelectorAll('.event-card').forEach(card => {
+	card.addEventListener('click', event => {
+		alert(`You clicked on ${card.querySelector('h3').textContent}!`);
+	});
+});
+</script>
+</head>
+<body>
+	<header>
+		<h1>News & Events</h1>
+		<p>Stay up-to-date with the latest news and events</p>
+	</header>
+	<main>
+		<!-- News section -->
+		
+		<section id="news">
+			<h2>News</h2>
+			<p>Latest news from Go-Tegs International School</p>
+			<div class="news-grid">
+				<div class="news-card">
+					<h3>News Title</h3>
+					<p>News content...</p>
+				</div>
+				<div class="news-card">
+					<h3>News Title</h3>
+					<p>News content...</p>
+				</div>
+				<div class="news-card">
+					<h3>News Title</h3>
+					<p>News content...</p>
+				</div>
+			</div>
+		</section>
+		
+		<!-- Events section -->
+		
+		<section id="events">
+			<h2>Events</h2>
+			<p>Upcoming events at Go-Tegs International School</p>
+			<div class="events-grid">
+				<div class="event-card">
+					<h3>Event Title</h3>
+					<p>Event content...</p>
+				</div>
+				<div class="event-card">
+					<h3>Event Title</h3>
+					<p>Event content...</p>
+				</div>
+				<div class="event-card">
+					<h3>Event Title</h3>
+					<p>Event content...</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2024 Go-Tegs International School</p>
+	</footer>
+</body>
+</html>

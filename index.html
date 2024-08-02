@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Go-Tegs International School</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.5">
+	<style>
+		/* Global Styles */
+		
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		
+		body {
+			font-family: Arial, sans-serif, Algerian;
+			line-height: 1.6;
+			background-color: #f0f0f0;
+		}
+		
+		/* Header Styles */
+		
+		header {
+			background-color: #007bff;
+			color: #ffffff;
+			padding: 1em;
+			text-align: center;
+		}
+		
+		header h1 {
+			font-size: 2em;
+			margin-bottom: 0.5em;
+		}
+		
+		header p {
+			font-size: 1.2em;
+			color: #ffffff;
+		}
+		
+		/* Navigation Styles */
+		
+		nav {
+			background-color: #333;
+			color: #ffffff;
+			padding: 1em;
+			text-align: center;
+		}
+		
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: space-between;
+		}
+		
+		nav li {
+			margin-right: 20px;
+		}
+		
+		nav a {
+			color: #ffffff;
+			text-decoration: none;
+		}
+		
+		nav a:hover {
+			color: #007bff;
+		}
+		
+		/* Main Content Styles */
+		
+		main {
+			display: block;
+			padding: 2em;
+		}
+		
+		section {
+			background-color: #ffffff;
+			padding: 2em;
+			margin-bottom: 2em;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		section h2 {
+			color: #333;
+			margin-top: 0;
+		}
+		
+		/* Footer Styles */
+		
+		footer {
+			background-color: #333;
+			color: #ffffff;
+			padding: 1em;
+			text-align: center;
+			clear: both;
+		}
+		
+		footer p {
+			font-size: 1.2em;
+			color: #ffffff;
+		}
+		
+		/* Link Styles */
+		
+		a {
+			color: #007bff;
+			text-decoration: none;
+		}
+		
+		a:hover {
+			color: #0056b3;
+		}
+		
+		/* Division Styles */
+		
+		.division {
+			background-color: #f7f7f7;
+			padding: 1em;
+			margin: 1em;
+			border: 1px solid #ddd;
+		}
+		
+		.division h2 {
+			color: #333;
+		}
+		
+.logo {
+  width: 20px; /* adjust the width to fit your logo */
+  height: 20px; /* adjust the height to fit your logo */
+  margin: 10px; /* add some margin around the logo */
+}
+	</style>
+	<script>
+// Add event listeners to navigation links
+document.querySelectorAll('nav a').forEach(link => {
+	link.addEventListener('click', event => {
+		event.preventDefault();
+		const targetId = link.getAttribute('href');
+		const targetSection = document.querySelector(targetId);
+		targetSection.scrollIntoView({ behavior: 'smooth' });
+	});
+});
+
+// Add additional JavaScript code as needed
+	</script>
+</head>
+<body>
+<header>
+  <div class="logo">
+    <!-- Insert school logo image here -->
+    <img src="img/logo.jpg" alt="Go-Tegs International School Logo" style="width:120px;height:120px;">
+  </div>
+
+  <h1>Go-Tegs International School</h1>  <p>Training the leaders of tomorrow</p>
+</header>
+	<nav>
+		<ul>
+			<li><a href="#about" id="about-btn">About Us</a></li>
+			<li><a href="#enrollmemt" id="enrollment-btn">Enrollment</a></li>
+			<li><a href="#academics" id="academics-btn">Academics</a></li>
+			<li><a href="#news" id="news-btn">News & Events</a></li>
+			<li><a href="#contact" id="contact-btn">Contact Us</a></li>
+		</ul>
+	</nav>
+  <div>
+      <pre>
+          
+          
+          
+          
+      </pre>
+  </div>
+	<main>
+		<!-- About Us section -->
+		
+		<section id="about">
+    <a href="about.html">
+			<h2>About Us</h2>
+			<p>Welcome to Go-Tegs International School! We are a leading educational institution...</p>
+		</a>
+		</section>
+		
+		<!-- Admissions section -->
+		
+		<section id="enrollment">
+    <a href="enrollment.html">
+			<h2>Enrollment</h2>
+			<p>Learn about our admissions process and requirements...</p>
+		</a>
+		</section>
+		
+		<!-- Academics section -->
+		
+		<section id="academics">
+    <a href="academics.html">
+			<h2>Academics</h2>
+			<p>Discover our academic programs and courses...</p>
+		</a>
+		</section>
+		
+		<!-- News & Events section -->
+		
+		<section id="news">
+  <a href="news.html">
+			<h2>News & Events</h2>
+<details>
+			<summary>Stay up-to-date with the latest news and events...</summary>
+<p>Go-Tegs International School expands infrastructure in the year 2024 giving it a good looking shape and also plans to deck the school successfully. To assist) proprietress, kindly go to the support button and give your donation.</p>
+<pre>
+    
+    
+</pre>
+<p>Go-Tegs International School plans to take on coding lessons, soap making lessons, art and craft lessons and research lessons for summer coachings, online classes, and after school programs</p>
+</details>
+   </a>
+		</section>
+ <div>
+	<footer>
+		<p>&copy; 2024 Go-Tegs International School</p>
+	</footer>
+ </div>
+</body>
+</html>
